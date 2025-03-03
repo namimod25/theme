@@ -1,0 +1,49 @@
+/* src/About.css */
+.page-container {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    background: rgb(247, 173, 173);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover {
+    transform: translateZ(20px) rotateX(5deg);
+  }
+  
+  .animate-in {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
